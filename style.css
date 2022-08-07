@@ -1,0 +1,120 @@
+body{
+    margin:0px;
+    overflow:hidden;
+}
+
+/* ________________LINK STYLING______________________*/
+
+/* styling and positioning the link container */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 40%;
+    position:absolute;
+    top: 200px; 
+}
+
+/* styling the link */
+li a {
+    display: block;
+    color: #000;
+    padding: 15px 200px;
+    text-decoration: none;
+}
+
+/* link gets larger on hover */
+li a:hover {
+    font-size: larger;
+}
+
+
+/*****************************************************/
+
+
+/* _________________STYLING THE HEADING______________________*/
+p{
+    position: absolute;
+    top:10%;
+    left:35%;
+}
+
+/*****************************************************/
+
+/* _________________GRADIENT EFFECT______________________*/
+
+/* general styling for both gradient containers */
+.grad-gen{
+
+    /* positioning */
+    position:absolute;
+    width: 50vw;
+    height: 50vh;
+    /* creating gradient */
+    background-image: radial-gradient(circle at 15% 100%,#1C3879,
+    #607EAA,
+    #7F557D,
+    #FF6392,#CCFF66);
+    /*extra styling */
+    background-size: 200% 500%; 
+    border-radius:30%;
+    transform:rotate(30deg);
+    /* putting gradient behind glass */
+    z-index:-1;
+    /* creating animation */
+    animation:change 15s ease-in-out infinite;
+        }
+
+
+  /* specific styling for first gradient container */
+#grad-0{
+    right:50px;
+    opacity: 25%;
+}
+
+/*specific styling for second gradient container */
+#grad-1{
+    height: 70vh;
+    right:35px;
+    transform: rotate(75deg);
+}
+
+
+
+/* key frames to define animation movement */
+@keyframes change{
+    0%{
+        background-position:0% 100% ;
+        top:10px;
+
+    }
+
+
+
+
+
+    50%{
+        background-position:100% 0% ;
+        top:180px;
+    }
+
+
+
+    100%{
+        background-position:0% 100% ;
+        top:10px;
+    }
+}
+
+
+
+/* glass in front of gradient containers.This adds a blur effect */
+#glass{
+    height: 100vh;
+    width: 100vw;
+    background-color:rgba(255,255,255,0.2);
+    backdrop-filter: blur(5px);
+    top: 0;
+    left:0;
+    }
+
