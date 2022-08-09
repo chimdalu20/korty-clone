@@ -1,7 +1,7 @@
 *{
     margin:0px;
     padding: 0px;
-    outline:2px solid ellow;
+    outline:2px solid yellow;
 }
 body{
     margin:0px;
@@ -78,7 +78,9 @@ p{
     opacity: 25%;
     width:500px ;
     height:500px;
+    background-image: radial-gradient(circle at 15% 100%,#CCFF66,#FF6392,#7F557D, #607EAA,#1C3879);
     animation: rotation 70s ease-in-out infinite ;
+    box-shadow: #000;
 }
 
 /*specific styling for second gradient container */
@@ -87,6 +89,7 @@ p{
     width:40vh;
     right:35px;
     transform: rotate(75deg);
+    background-image: radial-gradient(circle at 15% 100%,#CCFF66,#FF6392,#7F557D #607EAA,#1C3879,);
     animation:change 70s ease-in-out infinite;
   
 }
@@ -127,7 +130,7 @@ p{
     100%{
         background-position:0% 100% ;
          top:250px;
-         transform:rotate(0deg);
+         transform:rotate(360deg);
        
     }
 
@@ -166,6 +169,23 @@ p{
 .slogan-text{
     font-size:60px ;
 
+}
+
+.content{
+    width:630px ;
+    display: grid;
+    gap:20px 0px;
+    grid-template-columns:repeat(3,3fr);
+
+    position:absolute;
+    top:1800px ;
+    left: 100px;
+}
+.content-glass{
+    height: 300px;
+    width: 100px;
+    background-color:rgba(255, 255, 255, 0.297);
+    backdrop-filter: blur(5px);
 }
 /* 
 .top-left{
