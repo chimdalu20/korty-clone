@@ -74,19 +74,20 @@ p{
 
   /* specific styling for first gradient container */
 #grad-0{
-    right:50px;
+    right:200px;
     opacity: 25%;
     width:500px ;
     height:500px;
-    animation: rotation 70s infinite linear;
+    animation: rotation 70s ease-in-out infinite ;
 }
 
 /*specific styling for second gradient container */
 #grad-1{
-    height:70vh;
+    height:40vh;
+    width:40vh;
     right:35px;
     transform: rotate(75deg);
-    animation:change 45s ease-in-out infinite;
+    animation:change 70s ease-in-out infinite;
   
 }
 
@@ -96,15 +97,18 @@ p{
 @keyframes change{
     0%{
         background-position:0% 100% ;
-        top:10px;
+        top:15px;
+        transform:rotate(135deg);
     }
     50%{
         background-position:100% 0% ;
         top:180px;
+        transform:rotate(315deg);
     }
     100%{
         background-position:0% 100% ;
-        top:10px;
+        top:15px;
+        transform:rotate(135deg);
     }
 }
 
@@ -123,7 +127,7 @@ p{
     100%{
         background-position:0% 100% ;
          top:250px;
-         transform:rotate(360deg);
+         transform:rotate(0deg);
        
     }
 
