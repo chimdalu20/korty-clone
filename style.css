@@ -57,10 +57,10 @@ p{
     width: 50vw;
     height: 50vh;
     /* creating gradient */
-    background-image: radial-gradient(circle at 15% 100%,#1C3879,
-    #607EAA,
+    background-image: radial-gradient(circle at 15% 100%,pink,
+    purple,
     #7F557D,
-    #FF6392,#CCFF66);
+    #FF6392,#fbeef7);
     /*extra styling */
     background-size: 200% 500%; 
     border-radius:30%;
@@ -215,5 +215,12 @@ p{
     right :0;
   
 } */
-
+.logo{
+    padding:15px 70px ;
+    position: absolute;
+    z-index:2;
+}
+.logo:hover{
+    padding:30px 100px ;
+}
 
