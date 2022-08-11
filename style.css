@@ -1,11 +1,10 @@
 *{
     margin:0px;
     padding: 0px;
-    outline:2px solid ellow;
+    outline:2px solid  ellow;
 }
 body{
     margin:0px;
-    overflow:;
 }
 
 /* ________________LINK STYLING______________________*/
@@ -23,140 +22,35 @@ ul {
 /* styling the link */
 li a {
     display: block;
-    color: #000;
+    color:pink;
     padding: 15px 200px;
     text-decoration: none;
-    transition:0.5s;
+    font-size: 40px;
+    text-shadow: pink 5px 5px 10px;
+    transition:0.8s;
+    
 }
 
 /* link gets larger on hover */
 li a:hover {
-    font-size: larger;
+    font-size: 45px;
+    box-shadow:pink 10px 10px 15px ;
     
 }
 
-
-/*****************************************************/
-
-
-/* _________________STYLING THE HEADING______________________*/
-p{
-    position: absolute;
-    top:10%;
-    left:35%;
-}
-
-/*****************************************************/
-
-/* _________________GRADIENT EFFECT______________________*/
-
-/* general styling for both gradient containers */
-/*.grad-gen{
-    margin:0px;
-    overflow:hidden;
-    /* positioning /
-    position:fixed;
-    width: 50vw;
-    height: 50vh;
-    /* creating gradient /
-    background-image: radial-gradient(circle at 15% 100%,#1C3879,
-    #607EAA,
-    #7F557D,
-    #FF6392,#CCFF66);
-    /*extra styling /
-    background-size: 200% 500%; 
-    border-radius:30%;
-  
-    /* putting gradient behind glass /
-    z-index:-10;
-    /* creating animation */
-   
-        }
-
-
-  /* specific styling for first gradient container /
-#grad-0{
-    right:200px;
-    opacity: 25%;
-    width:500px ;
-    height:500px;
-    background-image: radial-gradient(circle at 15% 100%,#CCFF66,#FF6392,#7F557D, #607EAA,#1C3879);
-    animation: rotation 70s ease-in-out infinite ;
-    box-shadow: #000;
-}
-
-/*specific styling for second gradient container /
-#grad-1{
-    height:40vh;
-    width:40vh;
-    right:35px;
-    transform: rotate(75deg);
-    background-image: radial-gradient(circle at 15% 100%,#CCFF66,#FF6392,#7F557D #607EAA,#1C3879,);
-    animation:change 70s ease-in-out infinite;
-  
-}
-
-
-
-/* key frames to define animation movement /
-@keyframes change{
-    0%{
-        background-position:0% 100% ;
-        top:15px;
-        transform:rotate(135deg);
-    }
-    50%{
-        background-position:100% 0% ;
-        top:180px;
-        transform:rotate(315deg);
-    }
-    100%{
-        background-position:0% 100% ;
-        top:15px;
-        transform:rotate(135deg);
-    }
-}
-
-@keyframes rotation{
-
-    0%{
-        background-position:0% 100% ;
-         top:250px; 
-         transform:rotate(0deg); 
-    }
-    50%{
-        background-position:100% 0% ;
-        top:10px;
-        rotate:(180deg) ;
-    }
-    100%{
-        background-position:0% 100% ;
-         top:250px;
-         transform:rotate(360deg);
-       
-    }
-
-
-}
-*/
-
-
-
-
-
-
-
+/* ________________GLASS______________________*/
 /* glass in front of gradient containers.This adds a blur effect */
 #glass{
     height: 100vh;
     width: 100vw;
     background-color:rgba(255,255,255,0.2);
-    backdrop-filter: blur(5px);
-    top: 0;
-    left:0;
-    position: fixed;
+
+    backdrop-filter: blur(10px);
+    
+    position:fixed;
     }
     
+/* ________________SLOGAN______________________*/
 .slogan{
     display:inline-block;
     /* transform: translate(1000px, -2800px); transform-origin: 50% 50%; */
@@ -177,9 +71,12 @@ p{
 
 .slogan-text{
     font-size:60px ;
+    color: pink;
+
 
 }
 
+/* ________________CONTENT______________________*/
 .content{
     width:700px ;
     display: grid;
@@ -195,31 +92,36 @@ p{
     background-color:rgba(178, 174, 174, 0.3);
     backdrop-filter: blur(40px);
     border-radius:10%;
-    box-shadow: grey 10px 15px 15px; 
+    box-shadow: pink 5px 5px 20px; 
     transition:0.5s;
 }
 
-.content-glass:hover{
+/* .content-glass:hover{
     box-shadow:grey 10px 15px 15px, rgba(255, 255, 0, 0.209) 20px 25px 25px ;
     
+} */
 
+
+ .content-glass:hover{
+    box-shadow: rgb(255, 151, 168) 20px 20px 30px ;
+    
 }
+
+
 .image-in-glass {
-     display: flex;
-     justify-items: center;
-     justify-content: space-between;
-     flex-direction: column;
-     align-items: center;
-     padding: 20px;
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 
      /* grid-template-columns:repeat(1,1fr); */
 
   
 }
 
-.image-in-glass img{
 
-}
 
 .vertical-rule{
     position:absolute;
@@ -227,8 +129,6 @@ p{
     left:500px;
     width: 2px;
     height: 100vh;
-    /* background-color: 
-    black;  */
     background-image:linear-gradient(#CCFF66,#FF6392,#7F557D,#607EAA,#1C3879);
     background-size: 200% 500%;
     animation:vrule 20s ease-in-out infinite;
@@ -247,6 +147,178 @@ p{
         
     }
 }
+
+.grad-pic{
+    position:fixed;
+    right:-350px;
+    transform:scale(1.1);
+    z-index:-10;
+    animation: gra-pic 50s ease-in-out infinite;
+
+}
+
+@keyframes gra-pic{
+    /* up */
+
+    0%{
+        right:-350px;
+        top:0px;
+    }
+    10%{
+        right:-350px;
+        top:-500px ;
+    }
+ /* pause */
+    15%{
+        right:-350px;
+        top:-500px ;
+    }
+  /* up */
+    30%{
+        right:-350px;
+        top:-900px;  
+    }
+/* slowly move left */
+    60%{
+        right:0px;
+        top:-900px;  
+    }
+/* down */
+    70%{
+        right:0px;
+        top:-300px;  
+    }
+/* pause */
+    80%{
+        right:0px;
+        top:-300px;  
+    }
+/* down */
+    85%{
+        right:0px;
+        top:0px;  
+    }
+
+ /* back to origin */
+    80%{
+        right:-350px;
+        top:0px;  
+    }
+}
+
+
+
+
+
+/*****************************************************/
+
+/* _________________GRADIENT EFFECT______________________*/
+
+/* general styling for both gradient containers */
+.grad-gen{
+    margin:0px;
+    /* positioning */
+    position:fixed;
+    width: 20px;
+    height: 20px;
+    /* creating gradient */
+    background-image: radial-gradient(circle at 15% 100%,#1C3879,
+    #607EAA,
+    #7F557D,
+    #FF6392,#CCFF66);
+    /*extra styling */
+    background-size: 200% 500%; 
+    border-radius:30%;
+    /* putting gradient behind glass */
+    z-index:-5;
+    /* creating animation */
+
+}
+
+
+  /* specific styling for first gradient container */
+#grad-0{
+    left:200px;
+    opacity:100%;
+    background-image: radial-gradient(circle at 15% 100%,#CCFF66,#FF6392,#7F557D, #607EAA,#1C3879);
+    animation: rotation 20s ease-in-out infinite ;
+    box-shadow: #000;
+    opacity: 40%;
+}
+
+/*specific styling for second gradient container */
+#grad-1{
+    
+    transform: rotate(75deg);
+    background-image: radial-gradient(circle at 15% 100%,#CCFF66,#FF6392,#7F557D #607EAA,#1C3879,);
+    animation:change 20s ease-in-out infinite;
+    opacity: 50%;
+  
+}
+
+
+
+/* key frames to define animation movement */
+@keyframes change{
+    0%{
+        background-position:0% 100% ;
+        top:715px;
+        transform:rotate(0deg);
+        transform: scale(3);
+       
+    }
+    50%{
+        background-position:100% 0% ;
+        top:380px;
+        transform:rotate(180deg);
+        transform: scale(1);
+    }
+    100%{
+        background-position:0% 100% ;
+        top:715px;
+        transform:rotate(360deg);
+        transform: scale(3);
+    }
+}
+
+@keyframes rotation{
+
+    0%{
+        background-position:0% 100% ;
+         top:950px; 
+         transform:rotate(0deg); 
+         transform: scale(1);
+    }
+    40%{
+        transform: scale(4);
+        top:0px;
+
+    }
+    70%{
+        background-position:100% 0% ;
+        
+        rotate:(180deg) ;
+        transform: scale(2);
+    }
+    
+    100%{
+        background-position:0% 100% ;
+         top:950px;
+         transform:rotate(360deg);
+         transform: scale(1);
+       
+    }
+
+
+}
+
+
+
+
+
+
+
+
 
 
 
