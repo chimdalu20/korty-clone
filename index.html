@@ -1,76 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
- 
-    
-    <!--SMALL FLOATING SQUARES AT THE LEFT  -->
-    <!-- Thinner less bright square -->
-     <section class="grad-gen" id="grad-0">      
-    </section> 
-    <!-- fatter brighter square -->
-     <section class="grad-gen" id="grad-1"></section>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    </head>
+    <body>
+
+        <!-- ***************************************************** -->
+        <!-- _________________BACKGROUND_________________ -->
+
+        <!-- glass -->
+        <section id="glass">       </section>
+
+        <!--small floating squares on the left(behind glass) -->
+        <section class="grad-gen" id="grad-0">     </section> 
+        <section class="grad-gen" id="grad-1">     </section>
+
+        <!-- gradient image on the right(behind glass) -->
+        <section class="grad-pic"> 
+            <img src="gradient-bgg.png" alt="" style="">
+        </section>
 
 
+        <!-- ***************************************************** -->
+        <!-- _________________NAV-BAR_________________ -->
+        <!-- vertical  nav-bar -->
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        
 
+        <!-- ***************************************************** -->
+        <!-- _________________HEADING_________________ -->
+        
+        <!-- heading section-->
+        <div class="heading"  class="container animate__animated animate__pulse animate__fast animate__infinite animate__delay-2s">
 
+            <!-- top corners -->
+            <div class="heading-corner">
+                <img src="corner-top-left.svg" alt="">
+                <img src="corner-top-right.svg" alt="">
+            </div>
 
-    <!-- glass background -->
-    <section id="glass"> </section>
+            <!-- heading text-->
+            <span class="heading-text">
+                <p>
+                    Subscribe to my Channel.
+                </p>
+                
+            </span>
 
-    <!-- gradient image behind glass background -->
-    <section class="grad-pic"> 
-        <img src="gradient-bgg.png" alt="" style="">
-    </section>
-
-    <!-- vertical  nav-bar -->
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
-    </ul>
-
-    
-    <!-- slogan at top   -->
-    <div class="slogan">
-        <div class="slogan-corner">
-            <img src="corner-top-left.svg" alt="">
-            <img src="corner-top-right.svg" alt="">
-        </div>
-
-        <span class="slogan-text">
-         Subscribe to my Channel.
-        </span>
-        <div class="slogan-corner">
-            <img src="corner-bottom-left.svg" alt="">
-            <img src="corner-bottom-right.svg" alt="">
-        </div>
-    </div>
-
-    <!-- content at bottom -->
-    <div class="content">
-        <div class="content-glass"> 
-            <div class="image-in-glass">
-                <!-- <img src="img1.webp" alt="" width="60%">
-                <div>feiovneiwonvewo</div> -->
+            <!-- bottom corners -->
+            <div class="heading-corner">
+                <img src="corner-bottom-left.svg" alt="">
+                <img src="corner-bottom-right.svg" alt="">
             </div>
         </div>
-        <div class="content-glass"></div>
-        <div class="content-glass"></div>
-        <div class="content-glass"></div>
-    </div>
 
-    <!-- horizontal rule -->
-    <div class="vertical-rule"></div>
+        <!-- ***************************************************** -->
+        <!-- _________________CONTENT_________________ -->
+
+        <!-- content -->
+        <div class="content">
+            <div class="content-glass"> 
+                <div class="image-in-glass">
+                    <!-- <img src="img1.webp" alt="" width="60%">
+                    <div>feiovneiwonvewo</div> -->
+                </div>
+            </div>
+            <div class="content-glass"></div>
+            <div class="content-glass"></div>
+            <div class="content-glass"></div>
+        </div>
+
+        <!-- ***************************************************** -->
+        <!-- _________________VERTICAL RULE_________________ -->
+        <div class="vertical-rule"></div>
+
+        <!-- ***************************************************** -->
+        <!-- _________________LOGO_________________ -->
+    
+        <img src="fortress-logo.png" alt=""  width="400px" class="logo" >
+            
         
-    
-    
-</body>
+        
+    </body>
 </html>
